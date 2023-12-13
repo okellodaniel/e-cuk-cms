@@ -18,7 +18,7 @@ export interface Product {
     isFeatured: string;
     size: string;
     color: string;
-    image: string;
+    images: Image[];
 }
 
 export interface Image {
