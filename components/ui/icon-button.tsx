@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import React, { MouseEventHandler, useState } from "react";
+import React, { MouseEventHandler } from "react";
 
 
 interface IconButtonProps {
@@ -17,12 +17,11 @@ const IconButton: React.FC<IconButtonProps> = ({
     return (
         <button
             onClick={onClick}
-            className={cn("rounded-full items-center justify-center bg-white shadow-md p-2 hover:scale-110", 
-                className = 
+            className={cn("rounded-full flex items-center justify-center bg-white shadow-md p-2 hover:scale-110 transaition",
+                className
             )}
         >
-        
-
+            {icon}
         </button>
     );
 }

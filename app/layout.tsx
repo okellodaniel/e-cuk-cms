@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   description: 'A next generation luo online market',
 }
 
+export const revalidate = 0;
+
 export default function RootLayout({
   children,
 }: {
