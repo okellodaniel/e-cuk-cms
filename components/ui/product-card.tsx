@@ -19,7 +19,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     const router = useRouter();
 
     const handleClick = () => {
-        router.push(`/product/${data.id}`)
+        router.push(`/products/${data.id}`)
     }
     return (
         <div onClick={handleClick} className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4">
